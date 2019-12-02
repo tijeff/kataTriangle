@@ -3,4 +3,5 @@ class Triangle:
         self._a, self._b, self._c = sorted([a, c, b])
 
     def __str__(self):
-        return "Triangle sides length: %d, %d, %d" % (self._a, self._b, self._c)
+        sufix = " is equilateral" if self._a == self._b and self._b == self._c else ""
+        return "Triangle sides length: %d, %d, %d%s" % (self._a, self._b, self._c, sufix)
