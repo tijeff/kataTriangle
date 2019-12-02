@@ -15,5 +15,9 @@ class MyTestCase(unittest.TestCase):
         triangle_under_test = Triangle(6, 6, 4)
         self.assertEqual("Triangle sides length: 4, 6, 6 is isosceles", str(triangle_under_test))
 
+    def test_isosceles2(self):
+        triangle_under_test = Triangle(6, 4, 4)
+        self.assertEqual("Triangle sides length: 4, 4, 6 is isosceles", str(triangle_under_test))
+
 if __name__ == '__main__':
     unittest.main()
