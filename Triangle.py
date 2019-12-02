@@ -1,6 +1,6 @@
 class Triangle:
     def __init__(self, a, b, c):
-        pass
+        self._a, self._b, self._c = (a, c, b)
 
     def __str__(self):
-        return "Triangle sides length: 3, 5, 6"
+        return "Triangle sides length: %d, %d, %d" % (self._a, self._b, self._c)
